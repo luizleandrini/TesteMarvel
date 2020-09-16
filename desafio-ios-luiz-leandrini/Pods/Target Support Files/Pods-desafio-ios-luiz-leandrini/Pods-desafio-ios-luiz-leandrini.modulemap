@@ -1,0 +1,6 @@
+framework module Pods_desafio_ios_luiz_leandrini {
+  umbrella header "Pods-desafio-ios-luiz-leandrini-umbrella.h"
+
+  export *
+  module * { export * }
+}
