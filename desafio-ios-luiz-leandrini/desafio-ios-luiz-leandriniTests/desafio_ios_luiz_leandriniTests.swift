@@ -30,5 +30,4 @@ class desafio_ios_luiz_leandriniTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

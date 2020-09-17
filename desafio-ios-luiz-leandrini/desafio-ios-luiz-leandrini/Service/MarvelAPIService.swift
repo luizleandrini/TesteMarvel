@@ -39,20 +39,49 @@ class MarvelAPIService{
     }
     
     class func loadComics(id: Int, onComplete: @escaping(ComicsInfo?) -> Void){
-   //     let offset = page * limit
-        ///v1/public/characters/{characterId}/comics
 
         let url = basePath + "/\(id)/comics?limit=100&" + getCredentials()
         print(url)
 
         AF.request(url).responseJSON{(response) in
+            print(response)
             guard let data = response.data,
-                  let comicsInfo = try? JSONDecoder().decode(ComicsInfo.self, from: data),
-                comicsInfo.code == 200 else{
+                let comicsInfo = try? JSONDecoder().decode(ComicsInfo.self, from: data),comicsInfo.code == 200
+                else{
                     onComplete(nil)
                     return
             }
             onComplete(comicsInfo)
         }
     }
+    
+    
+/*
+    class func loadComics2(id: Int) -> ComicsInfo{
+        var comicsInfo: ComicsInfo
+        
+        
+        let url = basePath + "/\(id)/comics?limit=100&" + getCredentials()
+        print(url)
+        AF.request(url).responseJSON{ response in
+                 print(response)
+            switch response.result {
+            case .success(let value):
+                if let JSON = value as? [String: Any] {
+                    let status = JSON["code"] as! Int
+                    comicsInfo.code = JSON["code"] as! Int
+                    
+                    print(status)
+                    
+                }
+            case .failure(let error):
+                print(error)
+                break
+            }
+        }
+        return comicsInfo
+    }
+    */
+    
+    
 }
