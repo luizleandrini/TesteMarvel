@@ -27,8 +27,11 @@ class DetailsViewController: UIViewController {
         }else{
             ivThumb.image = nil
         }
-        
+        if(hero.description == ""){
+            
+        }else{
         lbDescription.text = hero.description
+        }
         lbName.text =  hero.name
     }
     
