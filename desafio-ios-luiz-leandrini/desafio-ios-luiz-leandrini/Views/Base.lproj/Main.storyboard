@@ -13,7 +13,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h8z-Ww-IvR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="QLs-MH-3A6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </navigationBar>
@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBs-1D-V8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="171" y="-89"/>
+            <point key="canvasLocation" x="-57038" y="6"/>
         </scene>
         <!--Heróis MARVEL-->
         <scene sceneID="Xdt-qB-UtY">
@@ -91,7 +91,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQG-jE-ESm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="-89"/>
+            <point key="canvasLocation" x="-56290" y="6"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="lM3-qo-CVk">
@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEK-fe-Dc3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673.913043478261" y="-87.053571428571431"/>
+            <point key="canvasLocation" x="-55535" y="8"/>
         </scene>
         <!--Hq View Controller-->
         <scene sceneID="ME6-in-elu">
@@ -231,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0yw-4s-cfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2421.739130434783" y="-87.053571428571431"/>
+            <point key="canvasLocation" x="-54787" y="8"/>
         </scene>
     </scenes>
 </document>

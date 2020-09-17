@@ -72,27 +72,5 @@ class HqViewController: UIViewController {
             }else{
                 self.lbId.text = "Personagem sem HQ"
             }
-        }
-        
-    func loadComedia() {
-        let group = DispatchGroup() // initialize
-
-
-            // Here is an example of an asynchronous request which use a callback
-            group.enter() // wait
-            
-            MarvelAPIService.loadComics(id: hero.id) { (info) in
-                if let info = info {
-                    self.comics += info.data.results
-                    group.leave()
-                }
-            }
-            
-
-        group.notify(queue: .main) {
-            // do something here when loop finished
-        }
-    }
-    
-    
+        }     
 }
